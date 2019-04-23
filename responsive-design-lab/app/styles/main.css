@@ -59,21 +59,23 @@
 }
 
 .flexbox .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background: #eee;
   overflow: auto;
 }
 
 .flexbox .container .col {
-    width: 27%;
-    padding: 30px 3.15% 0;
-    float: left;
+  flex: 1;
+  padding: 1rem;
 }
 
 @media screen and (max-width: 48rem) {
-  .flexbox .container .col {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    flex-flow: column;
-  }
+    .flexbox .container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-flow: column;
+    }
 }
